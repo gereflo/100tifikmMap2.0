@@ -71,7 +71,7 @@ headless = False
 bingKey = "Ag7ceErbHJORhQmZYkcqitAhObbQo42dg_ucM65A7O0GBi6JTaKWVLMIgtP6mqV2"
 # Las palabras clave sirven para encontrar el tipo de institucion en los papers
 keyWords = ['University', 'Université', 'Universidad', 'Institute', 'Research', 'Laboratory', 'Academy', 'Facility',
-            'Hospital']
+            'Hospital', 'Center', 'Centre']
 highlight = fg(198)
 ok = fg(34)
 ok2 = fg('blue')
@@ -233,7 +233,7 @@ if __name__ == "__main__":
             objCitas.append(principal)
 
         browser.quit()
-        print('---------------------------------Hciendo el pepinillo de papers----------------------------------------')
+        print('---------------------------------Haciendo el pepinillo de papers----------------------------------------')
         print("Objcitas = ", str(len(objCitas)))
         f = open(r"Citados.pckl", 'wb')
         pickle.dump(objCitas, f)
